@@ -23,11 +23,11 @@ int findTheSmallest(){
         if (array[i]< smallest){
             smallest= array[i];
         }
-        cout << "Smallest Number is: " << smallest << endl;;
     }
+    cout << "Smallest Number is: " << smallest << endl;;
+
     return smallest;
 }
 
 //outputs smallest numer is: 2
-//7 times
 //then it correctly says smallest number is -22
