@@ -8,19 +8,58 @@
 
 #include <iostream>
 using namespace std;
+
+
+
 int main()
 {
-    int numOverAv= 0;
-    int sum =0;
+    int sum=0;
     int average=0;
-    int array[4]= {4,17,23,6};
-    for (int i =0; i<4; ++i) {
-        sum += array[i];
-        average = sum/4;
+    cout << "Enter array size" << endl;
+    int arraySize;
+    cin>>arraySize;
+    int array[arraySize];
     
-}
+    for (int i =0; i<arraySize; i++) {
+        cout<< "Enter the integers" << endl;
+        cin >> array[i];
+        average= *(sum+ array);
+        
+    }
     
-     cout <<"Average of the array is: " << average << ", Numbers over the average are: " << endl;//figure out how to say over average
+    
+    
+    
+    cout << "The average is: " << average << endl;;
+    if (sum >= average) {
+        cout << array << " was greater than the average" << endl;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+    
+    
+    
+   
 }
 
