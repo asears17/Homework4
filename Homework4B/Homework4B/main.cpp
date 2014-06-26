@@ -11,10 +11,8 @@ using namespace std;
 int *doubleCapacity(const int*, int size);
 int main()
 {
-    
-
-    
-    
+    doubleCapacity(const int *, int size);
+ 
 }
 
 int *doubleCapacity(const int*, int size){

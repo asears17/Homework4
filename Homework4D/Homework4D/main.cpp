@@ -72,7 +72,7 @@ public:
         return true;
     }
     
-    bool overlaps (const Rectangle2D &r) const//problems again lol
+    bool overlaps (const Rectangle2D &r) const//problems again
     {
         return distance(x, y, r.x, r.y) <= width + height + r.height+ r.width;
         
@@ -82,6 +82,16 @@ public:
 
 int main()
 {
+    Rectangle2D r1(2, 2, 5.5, 4.9);
+    cout << "Area: " << r1.getArea() << endl;
+    cout << "Perimeter " << r1.getPerimeter() << endl;
+    
+    cout << r1.contains(3,3) << endl;
+    
+    Rectangle2D r2(4, 5, 10.5, 3.2);
+    Rectangle2D r3(3, 5, 2.3, 5.4);
+    cout << r1.contains(r2);
+    cout << r1.overlaps(r3);
     
 }
 
